@@ -1,0 +1,26 @@
+# --- A külső függőségek mappája (A legfontosabb! Ezt az 'npm install' hozza létre) ---
+node_modules/
+
+# --- Építési produkciós mappa (Ezt az 'npm run build' generálja) ---
+dist/
+build/
+
+# --- Environment variables ---
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# --- Log files and errors ---
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+eslintcache
+
+# --- System and IDE files ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
