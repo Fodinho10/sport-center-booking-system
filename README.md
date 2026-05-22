@@ -2,9 +2,23 @@
 
 Ez a projekt egy sportcentrum foglalási rendszerének teljes körű megvalósítása. Tartalmaz egy **Spring Boot (Java)** alapú REST API backendet és egy független **React (Vite/JavaScript)** Single Page Application (SPA) frontendet.
 
-## Technológiai Stack
-- **Backend:** Java 17+, Spring Boot 3.x, Spring Security (JWT), Spring Data JPA, H2 In-Memory Database
-- **Frontend:** React 18+, Vite, Axios, React Router Dom
+## Technológiai Stack és Architektúra
+**Backend (REST API):**
+- **Nyelv:** Java 25
+- **Keretrendszer:** Spring Boot 4.0.6
+- **Build és Függőségkezelés:** Maven
+- **Adatkonverzió (Mapper):** MapStruct 1.6.3 (DTO-k és Entitások transzparens konvertálásához)
+- **Plugins:** Lombok (1.18.40), Spring Boot DevTools
+
+**Adatbázis és Biztonság:**
+- **Adatbázis:** H2 In-Memory Database
+- **Adatbázis réteg (ORM):** Spring Data JPA (Hibernate) és Spring Boot Validation
+- **Hitelesítés:** Spring Security JWT (JSON Web Token) alapú stateless autentikációval
+
+**Frontend (Single Page Application):**
+- **Alapok:** React 18 (Hooks API) + Vite (fejlesztői szerver és bundler)
+- **Hálózati réteg:** Axios (egyedi Interceptorral a tokenek automatikus kezeléséhez)
+- **Navigáció:** React Router Dom (v6)
 
 ---
 
